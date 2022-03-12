@@ -1,6 +1,6 @@
 # RPiPicoPIODeployScript
 
-Script for PlatformIO that adds two new build targets for Rasberry Pi Pico. This adds a Build/Deploy and the Deploy only target. We take advantage of the Pi Pico's 1200 Baud reset functionality to move the board into bootloader mode without needing to use the reset. Because of issues with the standard `raspberrypi-swd` loading method (where the loader will not force bootloader mode and failed to transfer the built UF2), the standard PlatformIO upload target will fail to upload the built binary.
+Script for PlatformIO that adds two new build targets for Raspberry Pi Pico. This adds a Build/Deploy and the Deploy only target. We take advantage of the Pi Pico's 1200 Baud reset functionality to move the board into bootloader mode without needing to use the reset. Because of issues with the standard `raspberrypi-swd` loading method (where the loader will not force bootloader mode and failed to transfer the built UF2), the standard PlatformIO upload target will fail to upload the built binary.
 
 #
 ## Setup
