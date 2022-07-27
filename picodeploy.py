@@ -1,3 +1,5 @@
+# Dante Trisciuzzi 2022
+#
 ## platformio.ini defines, use pico enviroment ##
 # extra_scripts = picodeploy.py
 # device_drive_letter = E # Change to whatever default drive you're development board is on
