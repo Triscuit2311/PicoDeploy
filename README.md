@@ -1,4 +1,4 @@
-# RPiPicoPIODeployScript
+# Pico Deploy
 
 Script for PlatformIO that adds two new build targets for Raspberry Pi Pico. This adds a Build/Deploy and the Deploy only target. We take advantage of the Pi Pico's 1200 Baud reset functionality to move the board into bootloader mode without needing to use the hard reset, or unplug/re-plug. Because of issues with the standard `raspberrypi-swd` loading method (where the loader will not force bootloader mode and/or fail to transfer the built UF2), the standard PlatformIO upload target will fail to upload the built binary. I am unsure if the problem lies in the build target setup, picotool, or elsewhere. While I work to find the root cause of this issue (which I believe to be a timing issue), this script has been a great interim help to me. This allows the programmer to just use the deploy target, which will build, force bootloader mode, copy the new firmware, then reset the Pi Pico to run the new firmware. Without the need to manually reset the device, the development flow is much simpler and user-friendly.
 
