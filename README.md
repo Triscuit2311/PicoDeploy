@@ -7,7 +7,7 @@ Script for PlatformIO that adds two new build targets for Raspberry Pi Pico. Thi
 1. You'll need to add the following three items to your `platformio.ini` file under the `pico` enviroment:
     ```py
     extra_scripts = picodeploy.py
-    device_drive_letter = E # Change to whatever default drive you're development board is on
+    device_drive_letter = E # Change to whatever default drive your development board is on
     bootload_verify_tries = 10
     ```
 2. Copy over the `picodeploy.py` script into the same directory your platformio.ini file is in.
