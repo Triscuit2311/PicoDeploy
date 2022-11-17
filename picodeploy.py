@@ -55,6 +55,10 @@ def load_firmware() -> None:
         return False
 
     global device_volume_path
+    
+    print("Waiting for device to connect")
+    # TODO: Actually check device instead of static delay
+    sleep(3000)
 
     if not is_device_in_bootload():
         print(F"\033[93m> Device not located at [{device_volume_path}]")
